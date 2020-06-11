@@ -9,6 +9,9 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone:  http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: order80 #定义服务名称
+    prefer-ip-address: true # 设置暴露ip地址
 
 spring:
   application:
