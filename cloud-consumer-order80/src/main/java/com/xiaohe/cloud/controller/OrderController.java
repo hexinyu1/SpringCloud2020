@@ -22,7 +22,8 @@ public class OrderController {
     private RestTemplate restTemplate;// 注入restTemplate模板
 
     // 定义8001地址
-    private static final String URL = "http://localhost:8001";
+    // private static final String URL = "http://localhost:8001";
+    private static final String URL = "http://cloud-payment-service";
 
     @GetMapping(value = "/consumer/payment/create")
     public CommonResult<Payment> create(Payment payment) {
