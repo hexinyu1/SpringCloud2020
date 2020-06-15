@@ -16,6 +16,7 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
+    // 定义zookeeper的生产者的地址（注册到zookeeper中的名字）
     public static final String URL = "http://cloud-provider-zk-payment";
 
     @RequestMapping(value = "/consumer/order/zk")
