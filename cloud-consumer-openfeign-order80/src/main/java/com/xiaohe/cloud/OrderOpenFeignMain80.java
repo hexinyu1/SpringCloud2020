@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Content:
  */
 @SpringBootApplication
-@EnableFeignClients // 开启Fegin负载均衡
+@EnableFeignClients // 开启Fegin服务调用
 public class OrderOpenFeignMain80 {
 
     public static void main(String[] args) {
