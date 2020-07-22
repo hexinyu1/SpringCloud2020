@@ -15,11 +15,17 @@ import java.util.Date;
 /**
  * @Author:xiaohe
  * @Date:2020-07-04 15:49
- * @Content: 自定义过滤器
+ * @Content: 自定义gateway过滤器
  */
 @Component
 @Slf4j
 public class MyLogGateWayFilter implements GlobalFilter, Ordered {
+    /**
+     * 编写过滤器条件
+     * @param exchange
+     * @param chain
+     * @return
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         log.info("*********come in MyLogGateWayFilter: " + new Date());
